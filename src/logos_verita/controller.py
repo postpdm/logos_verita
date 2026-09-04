@@ -12,12 +12,8 @@ class Logos_Verita_Controller(BasePluginController):
     path = "/lv"
 
     @get("/")
-    async def user_homepage(self ) -> Template:
+    async def user_homepage(self ) -> str:
         return "Hello!"
-        #return Template(
-        #    template_name = LV_TEMPLATES_DIR + "index.html",
-        #    context={  }
-        #)
 
     @get("/admin_panel")
     async def admin_panel(self) -> str:
