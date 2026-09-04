@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logos-verita"
+version = "0.0.1"
+authors = [
+  { name="Y.N", email="yn.coder@gmail.com" },
+]
+description = "Logos Verita is a data analysis and visualisation package. You can use it as a plugin for Space Station"
+readme = "README.md"
+requires-python = ">=3.8"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "space-station-stc @ git+https://github.com/postpdm/space_station_stc.git",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/postpdm/logos_verita"
+"Bug Tracker" = "https://github.com/postpdm/logos_verita/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
